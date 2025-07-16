@@ -4,174 +4,172 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Zyntria | Future-First Tech Solutions</title>
-        <script>
-        tailwind.config = {
-        theme: {
-        extend: {
-        colors: {
-        cyan: '#00e5ff',
-        'dark-bg': '#0a0f2c',
-        }
-        }
-        }
-        }
-        </script>
-
         <link rel="icon" href="images/logo2.png"/>
         <link rel="apple-touch-icon" sizes="100x100" href="images/logo2.png">
         <link rel="stylesheet" href="style.css">
 
     </head>
-    <body class="bg-gray-900 text-white font-sans">
-        <header class="p-6 flex justify-between items-center border-b border-gray-700">
-            <div>
-            <img src="images/logo2.png" alt="zyntria-logo" width="60px" height="60px" style="display: inline-block; margin: 0px" >
-            <h1 class="text-2xl font-bold tracking-wide text-cyan-400" style="display: inline-block;">Zyntria</h1>
+    <body class="body">
+
+        <header class="header">
+            <div class="title">
+              <img src="images/logo2.png" alt="zyntria-logo" width="60px" height="60px" style="display: inline-block; margin: 0px">
+              <a href="index.html"><h1>Zyntria</h1></a>
             </div>
+            
             <nav>
-            <a href="#home" class="mx-2 hover:text-cyan-400">Home</a>
-            <a href="#services" class="mx-2 hover:text-cyan-400">Services</a>
-            <a href="#portfolio" class="mx-2 hover:text-cyan-400">Portfolio</a>
-            <a href="#contact" class="mx-2 hover:text-cyan-400">Contact</a>
+
+              <ul class="navbar">
+                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="#services" class="services">Services</a></li>
+                <li><a href="#portfolio" class="portfolio">Portfolio</a></li>
+                <li><a href="#contact" class="contact">Contact</a></li>
+              </ul>
+
             </nav>
+
         </header>
 
-        <section class="text-center py-24 px-6">
-            <h2 class="text-5xl font-bold mb-4">Build the Future</h2>
-            <p class="text-gray-300 max-w-xl mx-auto text-lg">We create bold, beautiful, and brilliant digital experiences — for startups, creators, and companies ready to scale.</p>
-            <a href="#contact" class="mt-8 inline-block bg-cyan-500 text-black px-6 py-3 rounded-full hover:bg-cyan-400">Get in Touch</a>
+        <hr>
+
+        <section class="greeting">
+            <h2 class="myH2">Build the Future with Zyntria</h2>
+            <p class="h2p">We create bold, beautiful, and brilliant digital experiences — for startups, creators, and companies ready to scale.</p>
+            <a href="#contact" class="get-in-touch">Get in Touch</a>
         </section>
 
-        <section id="about" class="py-16 px-6 bg-gray-800">
+        <br><hr>
 
-            <h3 class="text-3xl font-semibold text-center mb-8">About Us</h3>
+        <section id="about-us" class="about-us">
 
-            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <h3 class="myH3">About Us</h3>
 
-            <div class="bg-gray-700 p-6 rounded-xl">
-            <h4 class="text-xl font-bold mb-2 text-cyan-400">What we do</h4>
-            <p>At Zyntria, we design and build modern digital solutions that help businesses grow, operate smarter, and connect better with their audience. 
-            From clean, responsive websites and custom web apps to mobile apps and automation tools, we bring your ideas to life using scalable technologies 
-            like HTML, CSS, JavaScript, and Flutter. Whether you're just starting out or expanding, we create products that perform beautifully and deliver results</p>
+            <div class="about">
 
-            </div>
+                <div class="content">
+                    <h4 class="myH4">What we do</h4>
+                    <p>At Zyntria, we design and build modern digital solutions that help businesses grow, operate smarter, and connect better with their audience. 
+                    From clean, responsive websites and custom web apps to mobile apps and automation tools, we bring your ideas to life using scalable technologies 
+                    like HTML, CSS, JavaScript, and Flutter. Whether you're just starting out or expanding, we create products that perform beautifully and deliver results</p>
+                </div>
 
-            <div class="bg-gray-700 p-6 rounded-xl">
-            <h4 class="text-xl font-bold mb-2 text-cyan-400">Why we do it</h4>
-            <p>We believe technology should empower people — not complicate their lives. Zyntria exists to bridge the gap between brilliant ideas and functional, user-friendly products. 
-            We’re passionate about building tools that make work easier, communication clearer, and businesses stronger. Every line of code we write is driven by the desire to simplify, 
-            innovate, and leave a meaningful impact.</p>
+                <div class="content">
+                    <h4 class="myH4">Why we do it</h4>
+                    <p>We believe technology should empower people — not complicate their lives. Zyntria exists to bridge the gap between brilliant ideas and functional, user-friendly products. 
+                    We’re passionate about building tools that make work easier, communication clearer, and businesses stronger. Every line of code we write is driven by the desire to simplify, 
+                    innovate, and leave a meaningful impact.</p>
+                </div>
 
-            </div>
-
-            <div class="bg-gray-700 p-6 rounded-xl">
-            <h4 class="text-xl font-bold mb-2 text-cyan-400">Why choose us</h4>
-            <p>Zyntria stands out through a rare combination of creativity, clarity, and commitment. We don’t just build — we listen, collaborate, and tailor each solution to your real needs. 
-            Our small-but-mighty team brings both technical expertise and human understanding to every project, ensuring a smooth process and lasting results. With us, you’re not just hiring 
-            a service — you’re gaining a tech partner that genuinely cares about your success.</p>
-
-            </div>
-
-            </div>
-
-        </section>
-
-        <section id="services" class="py-16 px-6 bg-gray-800">
-
-            <h3 class="text-3xl font-semibold text-center mb-8">Our Services</h3>
-
-            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-
-            <div class="bg-gray-700 p-6 rounded-xl">
-              <h4 class="text-xl font-bold mb-2 text-cyan-400">Web Design & Development</h4>
-              <p>We craft clean, responsive, and purpose-driven websites tailored to your brand's identity. From stunning landing pages to dynamic web platforms, our solutions combine aesthetics with 
-                performance, ensuring your users get a seamless and engaging online experience. Whether you're starting from scratch or upgrading an existing site, we bring your digital vision to life.</p>
-            </div>
-
-            <div class="bg-gray-700 p-6 rounded-xl">
-                <h4 class="text-xl font-bold mb-2 text-cyan-400">Mobile Apps Development</h4>
-                <p>We develop intuitive and scalable mobile applications for Android and iOS, turning innovative ideas into functional, high-performance apps. Whether it's a simple utility or a complex product 
-                  ecosystem, our mobile solutions are built for usability, speed, and impact — helping you connect with users anytime, anywhere.</p>
-            </div>
-
-            <div class="bg-gray-700 p-6 rounded-xl">
-                <h4 class="text-xl font-bold mb-2 text-cyan-400">Automation & Tools</h4>
-                <p>Boost productivity and reduce manual effort with our custom automation solutions and smart tools. From streamlining workflows to building data dashboards and bots, we help businesses save time, 
-                  cut costs, and make smarter decisions by automating routine tasks and unlocking the power of technology.</p>
-            </div>
+                <div class="content">
+                    <h4 class="myH4">Why choose us</h4>
+                    <p>Zyntria stands out through a rare combination of creativity, clarity, and commitment. We don’t just build — we listen, collaborate, and tailor each solution to your real needs. 
+                    Our small-but-mighty team brings both technical expertise and human understanding to every project, ensuring a smooth process and lasting results. With us, you’re not just hiring 
+                    a service — you’re gaining a tech partner that genuinely cares about your success.</p>
+                </div>
 
             </div>
+
+            <br><hr>
 
         </section>
 
+        <section id="our-services" class="our-services">
 
-        <section id="contact" class="py-16 px-6 bg-gray-800">
+            <h3 class="myH3">Our Services</h3>
 
-            <h3 class="text-3xl font-semibold text-center mb-8">Contact Us</h3>
+            <div class="services">
 
-            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="content">
+                  <h4 class="myH4">Web Design & Development</h4>
+                  <p>We craft clean, responsive, and purpose-driven websites tailored to your brand's identity. From stunning landing pages to dynamic web platforms, our solutions combine aesthetics with 
+                    performance, ensuring your users get a seamless and engaging online experience. Whether you're starting from scratch or upgrading an existing site, we bring your digital vision to life.</p>
+                </div>
 
-                <div class="bg-gray-700 p-6 rounded-xl">
-                  <h4 class="text-xl font-bold mb-2 text-cyan-400">Web Design & Development</h4>
+                <div class="content">
+                    <h4 class="myH4">Mobile Apps Development</h4>
+                    <p>We develop intuitive and scalable mobile applications for Android and iOS, turning innovative ideas into functional, high-performance apps. Whether it's a simple utility or a complex product 
+                      ecosystem, our mobile solutions are built for usability, speed, and impact — helping you connect with users anytime, anywhere.</p>
+                </div>
+
+                <div class="content">
+                    <h4 class="myH4">Automation & Tools</h4>
+                    <p>Boost productivity and reduce manual effort with our custom automation solutions and smart tools. From streamlining workflows to building data dashboards and bots, we help businesses save time, 
+                      cut costs, and make smarter decisions by automating routine tasks and unlocking the power of technology.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <br><hr>
+
+        <section id="our-portfolio" class="our-portfolio">
+
+            <h3 class="myH3">Portfolio</h3>
+
+            <div class="portfolio">
+
+                <div class="portfolio-content">
+                  <h4 class="myH4">Web Design & Development</h4>
                   <img src="images/logo.png" alt="">
                 </div>
 
-                <div class="bg-gray-700 p-6 rounded-xl">
-                  <h4 class="text-xl font-bold mb-2 text-cyan-400">Mobile Apps Development</h4>
+                <div class="portfolio-content">
+                  <h4 class="myH4">Mobile Apps Development</h4>
                   <img src="images/logo2.png" alt="">
                 </div>
 
-                <div class="bg-gray-700 p-6 rounded-xl">
-                  <h4 class="text-xl font-bold mb-2 text-cyan-400">Automation & Tools</h4>
+                <div class="portfolio-content">
+                  <h4 class="myH4">Automation & Tools</h4>
                   <img src="images/logo.png" alt="">
                 </div>
 
-                <div class="bg-gray-700 p-6 rounded-xl">
-                  <h4 class="text-xl font-bold mb-2 text-cyan-400">Web Design & Development</h4>
+                <div class="portfolio-content">
+                  <h4 class="myH4">Web Design & Development</h4>
                   <img src="images/logo.png" alt="">
                 </div>
 
-                <div class="bg-gray-700 p-6 rounded-xl">
-                  <h4 class="text-xl font-bold mb-2 text-cyan-400">Mobile Apps Development</h4>
+                <div class="portfolio-content">
+                  <h4 class="myH4">Mobile Apps Development</h4>
                   <img src="images/logo2.png" alt="">
-                </div>
-
-                <div class="bg-gray-700 p-6 rounded-xl">
-                  <h4 class="text-xl font-bold mb-2 text-cyan-400">Automation & Tools</h4>
-                  <img src="images/logo.png" alt="">
                 </div>
 
             </div>
 
         </section>
-        <section id="contact" class="py-16 px-6 bg-gray-800">
 
-            <h3 class="text-3xl font-semibold text-center mb-8">Contact Us</h3>
+        <br><hr>
 
-            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <section id="contact-us" class="contact-us">
 
-                <div class="bg-gray-700 p-6 rounded-xl">
-                  <h4 class="text-xl font-bold mb-2 text-cyan-400">Web Design & Development</h4>
+            <h3 class="myH3">Contact Us</h3>
+
+            <div class="contact">
+
+                <div class="content">
+                  <h4 class="myH4">Web Design & Development</h4>
                   <p>Custom websites, portals, and platforms that perform and scale.</p>
                 </div>
 
-                <div class="bg-gray-700 p-6 rounded-xl">
-                  <h4 class="text-xl font-bold mb-2 text-cyan-400">Mobile Apps Development</h4>
+                <div class="content">
+                  <h4 class="myH4">Mobile Apps Development</h4>
                   <p>Android/iOS apps built with Flutter or native tech, ready to launch.</p>
                 </div>
 
-                <div class="bg-gray-700 p-6 rounded-xl">
-                  <h4 class="text-xl font-bold mb-2 text-cyan-400">Automation & Tools</h4>
+                <div class="content">
+                  <h4 class="myH4">Automation & Tools</h4>
                   <p>Work smarter with automations, dashboards, and smart solutions.</p>
                 </div>
 
             </div>
 
         </section>
+        
+        <br><hr>
 
-        <footer id="contact" class="text-center py-12 border-t border-gray-700">
-            <p class="text-gray-400">Ready to launch with Zyntria? <br>Email: <a href="mailto:duncanochieng48@gmail.com" class="text-cyan-400">duncanochieng48@gmail.com</a></p>
-            <p class="text-sm text-gray-600 mt-4">© 2025 Zyntria. All rights reserved.</p>
+        <footer id="footer" class="footer">
+            <p class="p1footer">Ready to launch with Zyntria? <br>Email: <a href="mailto:duncanochieng48@gmail.com" class="text-cyan-400">duncanochieng48@gmail.com</a></p>
+            <p class="p2footer">© 2025 Zyntria. All rights reserved.</p>
         </footer>
 
         <script src="https://cdn.tailwindcss.com"></script>
