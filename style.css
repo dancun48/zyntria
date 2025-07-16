@@ -49,23 +49,38 @@
 .body{
     background-color: #0d1b2a;
     color: white;
+    overflow-x: hidden;
 }
 
 .greeting{
     display: block;
     text-align: center;
+    align-content: center;
+    color: black;
     padding: 10px;
     margin: 10px;
+    background-image: url("images/backdrop.jpg"); 
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
 }
 .greeting .myH2{
     font-size: 2.5rem;
     font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
 }
+
 .greeting .h2p{
     font-size: 1.2rem;
     padding: 10px;
     margin: 10px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
 }
+
 .greeting .get-in-touch{
     border-radius: 15px;
     background-color: cyan;
@@ -78,7 +93,7 @@
 .greeting a:hover{
     background-color: rgb(102, 199, 199);
 }
-#about-us, #our-services, #our-portfolio, #contact-us{
+.about-us, .our-services, .our-portfolio, .contact-us{
     display: block;
     text-align: center;
 }
@@ -92,8 +107,9 @@
 .content{
     border: 1px solid;
     padding: 25px;
-    border-radius: 15px;
+    border-radius: 50px;
     margin: 20px;
+    box-shadow: 2px 2px 5px rgb(189, 115, 115);
 }
 .content p{
     padding: 20px;
@@ -111,24 +127,25 @@
     font-weight: bold;
     padding: 10px;
     margin: 10px;
+    text-decoration: underline;
 }
 
-#about-us{
+.about-us{
     display: block;
     text-align: center;
 }
 
-#our-services{
+.our-services{
     display: block;
     text-align: center;
 }
 
-#our-portfolio{
+.our-portfolio{
     display: block;
     text-align: center;
 }
 
-#contact-us{
+.contact-us{
     display: block;
     text-align: center;
 }
@@ -171,6 +188,7 @@
         margin: 10px 0;
         width: 90%;
     }
+
 }
 
 @media (max-width: 600px) {
@@ -196,5 +214,38 @@
         padding: 10px;
         margin: 5px;
         font-size: 0.9em;
+    }
+}
+
+
+/* Hide menu icon by default */
+.navbar .icon {
+    display: none;
+}
+
+/* Show hamburger and hide links on small screens */
+@media (max-width: 900px) {
+    .navbar li:not(:last-child) {
+        display: none;
+    }
+    .navbar .icon {
+        display: block;
+        cursor: pointer;
+    }
+    .navbar.responsive {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar.responsive li {
+        display: block;
+        width: 100%;
+    }
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .navbar.responsive li:not(.icon) {
+        display: block;
     }
 }
