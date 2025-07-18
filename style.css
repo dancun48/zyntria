@@ -128,7 +128,7 @@ body{
     display: flex;
     text-align: center;
     padding: 10px;
-    height: 350px;
+    height: auto;
     background-color: rgb(240, 235, 229);
     margin-right: 300px;
     margin-left: 300px;
