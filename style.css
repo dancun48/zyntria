@@ -362,3 +362,35 @@ body {
         font-size: 0.7rem;
     }
 }
+
+
+/* Hide hamburger by default */
+.nav-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Show hamburger and hide nav links on small screens */
+@media (max-width: 900px) {
+    .nav-toggle {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #f7f3f2;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        z-index: 100;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .header {
+        position: relative;
+    }
+}
