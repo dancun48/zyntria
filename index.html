@@ -132,35 +132,48 @@
 
     <section id="contact-us" class="contact-us">
         <h2 class="section-header">Contact Us</h2>
-        <hr>
         <div class="contacts">
     
-            <div class="form">
-                <form action="POST">
-                    <label for="fullName">Full Name: </label>
-                    <input id="fullName" type="text" name="fullName">
+            <div class="reach-out">
 
-                    <label for="email">Email address: </label>
-                    <input id="email" type="text" name="email">
+                <div class="form-elements">
+                    <form action="POST" class="form-elements">
 
-                    <label for="comments">Comments: </label>
-                    <input id="comments" type="text-area" name="comments">
-                    <button id="button">Submit</button>
-                </form>
+                        <label for="fullName">Full Name: </label>
+                        <input id="fullName" type="text" name="fullName" required>
+
+                        <label for="email">Email address: </label>
+                        <input id="email" type="text" name="email" required>                        
+
+                        <label for="comments">Message: </label>
+                        <textarea id="comments" type="text-area" name="comments" required></textarea>
+                        <button id="button">Submit</button>
+                    </form>
+                </div>
                 
             </div>
-            <div id="socials" class="socials">
-                <i class="fa-brands fa-twitter fa-2x"><p class="icon">Twitter</p></i>
-                <i class="fa-brands fa-tiktok fa-2x"><p class="icon">Tiktok</p></i>
-                <i class="fa-brands fa-youtube fa-2x"><p class="icon">Instagram</p></i>
-                <i class="fa-brands fa-square-instagram fa-2x"><p class="icon">Youtube</p></i>
-                <i class="fa-solid fa-phone-volume fa-2x"><p class="icon">Phone</p></i>
-                <i class="fa-solid fa-envelope fa-2x"><p class="icon">Email</p></i>
+
+            <div class="subscribe">
+                    <h3>Add Zyntria to your inbox</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In exercitationem quidem molestias a voluptate In exercitationem quidem molestias a voluptate vitae accusamus quas. Eaque, odit vel?</p>
+                    <input type="text" placeholder="Email address">
+                    <button id="button">Subscribe</button>
             </div>
+                
+            <div class="socials">
+                <ul class="icon">
+                    <li><a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a><span>Tiktok</span></li>
+                    <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a><span>Instagram</span></li>
+                    <li><a href="07123456789" target="_blank"><i class="fa-brands fa-facebook"></i></a><span>Facebook</span></li>
+                    <li><a href="mailto:duncanochieng48@gmail.com"><i class="fa-solid fa-envelope"></i></a><span>Email</span></li>
+                </ul>
+            </div>
+            
         </div>
     </section>
 
     <hr>
+    <!-----------------------------------------------footer---------------------------------------------------->
     <footer class="footer">
         <p class="p1footer">Ready to launch with Zyntria?</p>
         <p class="f-email">Email: <a href="mailto:duncanochieng48@gmail.com" class="text-cyan-400">duncanochieng48@gmail.com</a></p>

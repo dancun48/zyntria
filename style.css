@@ -7,6 +7,7 @@
 
 body{
     background-color: #f7f3f2;
+    box-sizing: border-box;
 }
 
 .header{
@@ -198,44 +199,7 @@ body{
     border-radius: 20px;
 }
 
-.contacts{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgb(229, 218, 241);
-    padding: 20px;
-    border-radius: 25px;
-}
-.form{
-    padding: 50px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-    display: flex;
-    color: rgb(4, 55, 165);
 
-}
-.socials{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-.socials i{
-    padding: 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-}
-#button{
-    font-size: 1rem;
-    background-color: brown;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-}
 .footer{
     text-align: center;
     padding: 10px;
@@ -249,7 +213,138 @@ body{
     font-size: 0.8rem;
 }
 
+.contacts{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin: 5px;
+    background-color: rgb(213, 235, 227);
+    border-radius: 5px;
+}
+.reach-out{
+    display: flex;
+    flex-direction: column;
+    width: fixed;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.form-elements{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    height: 200px;
+    padding: 0 20px;
 
+}
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: center;
+    width: fixed;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form-elements label{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.form-elements input,textarea{
+    font-size: 1.2rem;
+}
+#button{
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+
+.subscribe p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+.socials{
+    padding: 10;
+    margin: 20px;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+}
+.socials .icon{
+    list-style-type: none;
+    transform: translate(-50, -50%);
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.icon li{
+    margin: 5px 10px;
+    padding: 5px;
+    text-align: center;
+    transition: 0.5s;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.icon li a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+}
+.icon li a .fa-brands{
+    font-size: 20px;
+    color: #262626;
+    line-height: 80px;
+    transition: 0.5s;
+    padding-right: 14px;
+    font-weight: lighter;
+}
+.icon li a .fa-solid{
+    font-size: 20px;
+    color: #262626;
+    line-height: 80px;
+    transition: 0.5s;
+    padding-right: 14px;
+    font-weight: lighter;
+}
+
+span{
+    padding: 0;
+    margin: 0;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.icon li a::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    transform: 0.5s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+.icon li a::after{
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: -20px;
+    height: 20px;
+    width: 100%;
+    transform: 0.5s;
+    transform: rotate(0deg) skewX(-45deg);
+}
+.icon li a:hover{
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
 
 
 
